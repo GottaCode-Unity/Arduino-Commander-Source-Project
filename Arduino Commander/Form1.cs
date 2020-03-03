@@ -162,7 +162,7 @@ namespace Arduino_Commander
                     {
                         Arduino.Close();
 
-                        MessageBox.Show("Your arduino has to run the Arduino Commander Software! Please upload it.", "Arduino Commander", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("There is no arduino connected. If your arduino is connected it has to run the Arduino Commander Software! Please upload it.", "Arduino Commander", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
                         UploadProgram uu = new UploadProgram();
 

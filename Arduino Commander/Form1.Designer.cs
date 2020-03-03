@@ -76,9 +76,10 @@
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(6, 45);
+            this.btnSend.Location = new System.Drawing.Point(9, 69);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(306, 35);
+            this.btnSend.Size = new System.Drawing.Size(459, 54);
             this.btnSend.TabIndex = 0;
             this.btnSend.Text = "Send command";
             this.btnSend.UseVisualStyleBackColor = true;
@@ -94,10 +95,11 @@
             "TEXT"});
             this.tbText.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.tbText.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.tbText.Location = new System.Drawing.Point(6, 18);
+            this.tbText.Location = new System.Drawing.Point(9, 28);
+            this.tbText.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tbText.Name = "tbText";
             this.tbText.ShortcutsEnabled = false;
-            this.tbText.Size = new System.Drawing.Size(306, 20);
+            this.tbText.Size = new System.Drawing.Size(457, 26);
             this.tbText.TabIndex = 1;
             this.tbText.TabStop = false;
             this.tbText.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbText_KeyDown);
@@ -112,9 +114,11 @@
             this.gbCommunication.Controls.Add(this.tbText);
             this.gbCommunication.Controls.Add(this.btnSend);
             this.gbCommunication.Enabled = false;
-            this.gbCommunication.Location = new System.Drawing.Point(183, 6);
+            this.gbCommunication.Location = new System.Drawing.Point(274, 9);
+            this.gbCommunication.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbCommunication.Name = "gbCommunication";
-            this.gbCommunication.Size = new System.Drawing.Size(795, 525);
+            this.gbCommunication.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbCommunication.Size = new System.Drawing.Size(1192, 808);
             this.gbCommunication.TabIndex = 2;
             this.gbCommunication.TabStop = false;
             this.gbCommunication.Text = "Communication";
@@ -125,20 +129,23 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lbSerial.FormattingEnabled = true;
+            this.lbSerial.ItemHeight = 20;
             this.lbSerial.Items.AddRange(new object[] {
             "Serial:"});
-            this.lbSerial.Location = new System.Drawing.Point(318, 19);
+            this.lbSerial.Location = new System.Drawing.Point(477, 29);
+            this.lbSerial.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.lbSerial.Name = "lbSerial";
             this.lbSerial.ScrollAlwaysVisible = true;
-            this.lbSerial.Size = new System.Drawing.Size(416, 498);
+            this.lbSerial.Size = new System.Drawing.Size(622, 764);
             this.lbSerial.TabIndex = 4;
             // 
             // btnClear
             // 
             this.btnClear.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnClear.Location = new System.Drawing.Point(740, 18);
+            this.btnClear.Location = new System.Drawing.Point(1110, 28);
+            this.btnClear.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(49, 23);
+            this.btnClear.Size = new System.Drawing.Size(74, 35);
             this.btnClear.TabIndex = 3;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
@@ -155,18 +162,21 @@
             this.gbConnect.Controls.Add(this.btnConnect);
             this.gbConnect.Controls.Add(this.label1);
             this.gbConnect.Controls.Add(this.cbPort);
-            this.gbConnect.Location = new System.Drawing.Point(6, 6);
+            this.gbConnect.Location = new System.Drawing.Point(9, 9);
+            this.gbConnect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbConnect.Name = "gbConnect";
-            this.gbConnect.Size = new System.Drawing.Size(171, 117);
+            this.gbConnect.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbConnect.Size = new System.Drawing.Size(256, 180);
             this.gbConnect.TabIndex = 3;
             this.gbConnect.TabStop = false;
             this.gbConnect.Text = "Connection";
             // 
             // btnRefrashPorts
             // 
-            this.btnRefrashPorts.Location = new System.Drawing.Point(6, 45);
+            this.btnRefrashPorts.Location = new System.Drawing.Point(9, 69);
+            this.btnRefrashPorts.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnRefrashPorts.Name = "btnRefrashPorts";
-            this.btnRefrashPorts.Size = new System.Drawing.Size(159, 23);
+            this.btnRefrashPorts.Size = new System.Drawing.Size(238, 35);
             this.btnRefrashPorts.TabIndex = 4;
             this.btnRefrashPorts.Text = "Refresh ports...";
             this.btnRefrashPorts.UseVisualStyleBackColor = true;
@@ -174,9 +184,10 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(6, 74);
+            this.btnConnect.Location = new System.Drawing.Point(9, 114);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(159, 37);
+            this.btnConnect.Size = new System.Drawing.Size(238, 57);
             this.btnConnect.TabIndex = 2;
             this.btnConnect.Text = "Connect";
             this.btnConnect.UseVisualStyleBackColor = true;
@@ -185,18 +196,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 22);
+            this.label1.Location = new System.Drawing.Point(9, 34);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(29, 13);
+            this.label1.Size = new System.Drawing.Size(42, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Port:";
             // 
             // cbPort
             // 
             this.cbPort.FormattingEnabled = true;
-            this.cbPort.Location = new System.Drawing.Point(41, 18);
+            this.cbPort.Location = new System.Drawing.Point(62, 28);
+            this.cbPort.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.cbPort.Name = "cbPort";
-            this.cbPort.Size = new System.Drawing.Size(121, 21);
+            this.cbPort.Size = new System.Drawing.Size(180, 28);
             this.cbPort.TabIndex = 0;
             // 
             // tabControl1
@@ -205,19 +218,21 @@
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(994, 585);
+            this.tabControl1.Size = new System.Drawing.Size(1491, 900);
             this.tabControl1.TabIndex = 5;
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.gbConnect);
             this.tabPage1.Controls.Add(this.gbCommunication);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 29);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(986, 559);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage1.Size = new System.Drawing.Size(1483, 867);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Manual";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -227,38 +242,49 @@
             this.tabPage2.Controls.Add(this.Inspector);
             this.tabPage2.Controls.Add(this.gbProgram);
             this.tabPage2.Controls.Add(this.menuIDE);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 29);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(986, 559);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.tabPage2.Size = new System.Drawing.Size(1483, 867);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Programming";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Inspector
             // 
-            this.Inspector.Location = new System.Drawing.Point(736, 30);
+            this.Inspector.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Inspector.Location = new System.Drawing.Point(1104, 46);
+            this.Inspector.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Inspector.Name = "Inspector";
-            this.Inspector.Size = new System.Drawing.Size(242, 508);
+            this.Inspector.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.Inspector.Size = new System.Drawing.Size(363, 782);
             this.Inspector.TabIndex = 3;
             this.Inspector.TabStop = false;
             this.Inspector.Text = "Inspector";
             // 
             // gbProgram
             // 
+            this.gbProgram.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gbProgram.Controls.Add(this.component1);
-            this.gbProgram.Location = new System.Drawing.Point(8, 30);
+            this.gbProgram.Location = new System.Drawing.Point(12, 46);
+            this.gbProgram.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.gbProgram.Name = "gbProgram";
-            this.gbProgram.Size = new System.Drawing.Size(722, 508);
+            this.gbProgram.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.gbProgram.Size = new System.Drawing.Size(1083, 782);
             this.gbProgram.TabIndex = 2;
             this.gbProgram.TabStop = false;
             this.gbProgram.Text = "Program";
             // 
             // component1
             // 
-            this.component1.Location = new System.Drawing.Point(6, 19);
+            this.component1.Location = new System.Drawing.Point(9, 29);
+            this.component1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.component1.Name = "component1";
-            this.component1.Size = new System.Drawing.Size(100, 100);
+            this.component1.Size = new System.Drawing.Size(150, 154);
             this.component1.TabIndex = 0;
             this.component1.Text = "None";
             this.component1.UseVisualStyleBackColor = true;
@@ -268,9 +294,10 @@
             this.menuIDE.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.programToolStripMenuItem});
-            this.menuIDE.Location = new System.Drawing.Point(3, 3);
+            this.menuIDE.Location = new System.Drawing.Point(4, 5);
             this.menuIDE.Name = "menuIDE";
-            this.menuIDE.Size = new System.Drawing.Size(980, 24);
+            this.menuIDE.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
+            this.menuIDE.Size = new System.Drawing.Size(1475, 25);
             this.menuIDE.TabIndex = 0;
             this.menuIDE.Text = "menuStrip1";
             // 
@@ -282,7 +309,7 @@
             this.saveAsToolStripMenuItem,
             this.clesToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 19);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
@@ -315,7 +342,7 @@
             this.programToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.updateToolStripMenuItem});
             this.programToolStripMenuItem.Name = "programToolStripMenuItem";
-            this.programToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            this.programToolStripMenuItem.Size = new System.Drawing.Size(65, 19);
             this.programToolStripMenuItem.Text = "Program";
             // 
             // updateToolStripMenuItem
@@ -331,9 +358,10 @@
             this.arduinoStatus,
             this.lbll,
             this.btnDisconnect});
-            this.ssStatusManual.Location = new System.Drawing.Point(0, 563);
+            this.ssStatusManual.Location = new System.Drawing.Point(0, 878);
             this.ssStatusManual.Name = "ssStatusManual";
-            this.ssStatusManual.Size = new System.Drawing.Size(994, 22);
+            this.ssStatusManual.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
+            this.ssStatusManual.Size = new System.Drawing.Size(1491, 22);
             this.ssStatusManual.TabIndex = 6;
             this.ssStatusManual.Text = "Status:";
             // 
@@ -369,12 +397,13 @@
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 585);
+            this.ClientSize = new System.Drawing.Size(1491, 900);
             this.Controls.Add(this.ssStatusManual);
             this.Controls.Add(this.tabControl1);
             this.MainMenuStrip = this.menuIDE;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Arduino Commander";
