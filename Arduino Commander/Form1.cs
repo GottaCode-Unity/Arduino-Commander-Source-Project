@@ -17,7 +17,9 @@ namespace Arduino_Commander
     {
         string message = "";
 
-        string[] commands = { "TEXT" , "DOUT" , "AOUT" , "DREAD" , "AREAD" };
+        Button currentComponent;
+
+        List<Component> componentsField = new List<Component>();
 
         public MainWindow()
         {
@@ -248,22 +250,101 @@ namespace Arduino_Commander
             }
         }
 
+        private void UpdateInspector(Button sender)
+        {
+            List<Panel> panels = new List<Panel>();
+
+            panels.Add(panelCreateComponent);
+
+            foreach (Panel panel in panels)
+            {
+                panel.Enabled = false;
+
+                panel.Visible = false;
+            }
+
+            Component currentComponent = null;
+
+            foreach (Component component in componentsField)
+            {
+                if (component.myButton == sender)
+                {
+                    currentComponent = component;
+
+                    break;
+                }
+            }
+
+            try
+            {
+                switch (currentComponent.componentType)
+                {
+                    case Component.ComponentType.DigitalOUT:
+                        break;
+                    case Component.ComponentType.DigitalIN:
+                        break;
+                    case Component.ComponentType.AnalogOUT:
+                        break;
+                    case Component.ComponentType.AnalogIN:
+                        break;
+                    case Component.ComponentType.Calculate:
+                        break;
+                    case Component.ComponentType.IRremoteSensor:
+                        break;
+                }
+            }
+            catch (Exception)
+            {
+                //create component
+            }
+        }
+
         private void clesToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Disconnect(null, null);
 
             Application.Exit();
         }
+
+        private void component1_Click(object sender, EventArgs e)
+        {
+            UpdateInspector((Button)sender);
+        }
     }
 
-    class Component
+    public class Component
     {
-        enum ComponentType
+        public ComponentType componentType;
+
+        string name;
+
+        public int pin;
+
+        public Button myButton;
+
+        int inValue;
+
+        int outValue;
+
+        public Component(string name, ComponentType componentType, int pin, Button parent)
+        {
+            this.name = name;
+
+            this.componentType = componentType;
+
+            this.pin = pin;
+
+            myButton = parent;
+        }
+
+        public enum ComponentType
         {
             DigitalOUT,
             DigitalIN,
             AnalogOUT,
-            AnalogIN
+            AnalogIN,
+            Calculate,
+            IRremoteSensor,
         }
 
     }
